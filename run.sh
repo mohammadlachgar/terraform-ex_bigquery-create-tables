@@ -1,5 +1,6 @@
 #!/bin/bash
 
+. ./variables.sh
 
 mkdir -p ./creds 
 
