@@ -15,6 +15,14 @@ steps:
   - '-c'
   - |
       terraform init
+
+# [START serviceaccount]
+- id: 'serviceaccount'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['run.sh']
+# [END serviceaccount]
+
 # [START tf-plan]
 - id: 'tf plan'
   name: 'hashicorp/terraform:0.14.4'
